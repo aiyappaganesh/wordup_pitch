@@ -1,0 +1,11 @@
+*.pyc
+*~
+.#*
+*swp
+.ropeproject
+nohup.out
+.idea/
+.idlerc
+.DS_Store
+.coverage
+robots.txt
