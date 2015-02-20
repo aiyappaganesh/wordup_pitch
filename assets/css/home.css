@@ -1,0 +1,18 @@
+.section {
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.orange-overlay {
+    background-color: rgba(233,87,62,0.70);
+    position: relative;
+    height: 100%;
+}
+
+.white-overlay {
+    background-color: rgba(255,255,255,0.70);
+    position: relative;
+    height: 100%;
+}
