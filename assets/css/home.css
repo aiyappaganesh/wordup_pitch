@@ -7,12 +7,47 @@
 
 .orange-overlay {
     background-color: rgba(233,87,62,0.70);
-    position: relative;
+    position: absolute;
     height: 100%;
+    width: 100%;
 }
 
 .white-overlay {
     background-color: rgba(255,255,255,0.70);
-    position: relative;
+    position: absolute;
     height: 100%;
+    width: 100%;
+}
+
+.copy-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+}
+
+.section-1-title {
+    font-family: nevis;
+    color:  #ffffff;
+    font-size: 3.75vw;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 12%;
+}
+
+.section-1-copy {
+    font-family: OpenSans;
+    color:  #ffffff;
+    font-size: 2.97vw;
+    font-weight: 400;
+    text-align: center;
+}
+
+.section-1-black-copy {
+    font-family: nevis;
+    color:  #1c1c1c;
+    font-size: 3.75vw;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
 }
