@@ -5,3 +5,8 @@
 [class*=col-] {
     padding: 0px !important;
 }
+
+@font-face {
+    font-family: nevis;
+    src: url('/assets/fonts/nevis.ttf');
+}
