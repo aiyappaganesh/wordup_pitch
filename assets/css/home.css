@@ -3,6 +3,7 @@
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+    text-align: center;
 }
 
 .orange-overlay {
@@ -20,6 +21,13 @@
 }
 
 .copy-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+}
+
+.content-overlay {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -50,4 +58,141 @@
     font-weight: 700;
     text-align: center;
     margin-top: 50px;
+}
+
+.section-title-black {
+    font-family: nevis;
+    color:  #1c1c1c;
+    font-size: 2.8vw;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.section-title-white {
+    font-family: nevis;
+    color:  #ffffff;
+    font-size: 2.8vw;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.white-phone-outline {
+    top: 0px;
+    left: 0px;
+}
+
+.white-phone-screen {
+    top: 57px;
+    left: 43px;
+}
+
+.white-phone {
+    height: 415px;
+}
+
+.carousel-inner>.item {
+    transition: 0s ease left;
+}
+
+.section-2-carousel-copy {
+    font-family: 'Open Sans', sans-serif;
+    color:  #1c1c1c;
+    font-size: 2.34vw;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30%;
+}
+
+.section-3-copy {
+    font-family: 'Open Sans', sans-serif;
+    color:  #1c1c1c;
+    font-size: 1.88vw;
+    font-weight: 600;
+}
+
+.section-4-copy {
+    font-family: 'Open Sans', sans-serif;
+    color:  #1c1c1c;
+    font-size: 1.88vw;
+    font-weight: 600;
+    margin-top: 30%;
+}
+
+.white-circle {
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.constrain-50 {
+    max-height: 50px;
+    max-width: 50px;
+    margin-top: 10px;
+}
+
+.section-5-left-copy {
+    font-family: 'Open Sans', sans-serif;
+    color:  #1c1c1c;
+    font-size: 1.88vw;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 21px !important;
+    margin-bottom: 0px !important;
+}
+
+.section-5-right {
+    margin-top: 50px;
+}
+
+.section-5-right-title {
+    font-family: 'Open Sans', sans-serif;
+    color:  #1c1c1c;
+    font-size: 1.88vw;
+    font-weight: 600;
+    text-align: left;
+}
+
+.section-5-right-copy {
+    font-family: 'Open Sans', sans-serif;
+    color:  #1c1c1c;
+    font-size: 1.88vw;
+    font-weight: 400;
+    text-align: left;
+}
+
+.section-6-title {
+    font-family: 'Open Sans', sans-serif;
+    color:  #1c1c1c;
+    font-size: 2.34vw;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 0px !important;
+    margin-top: 10px !important;
+}
+
+.section-6-copy {
+    font-family: 'Open Sans', sans-serif;
+    color:  #1c1c1c;
+    font-size: 1.41vw;
+    font-weight: 400;
+    text-align: left;
+}
+
+.section-6-graph-scale {
+    border-left: 1px solid #e9573f;
+    border-right: 1px solid #e9573f;
+}
+
+.section-6-graph-bar {
+    background-color: #e9573f;
+    font-family: 'Open Sans', sans-serif;
+    color:  #ffffff;
+    font-size: 1.09vw;
+    font-weight: 400;
+    text-align: center;
+    height: 28px;
+    padding-top: 4px !important;
 }

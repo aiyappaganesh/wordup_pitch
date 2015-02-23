@@ -3,3 +3,7 @@ $(document).ready(function(){
     $('.section').height(height);
     $('.content').height(height * 6);
 });
+
+$(document).ready(function(){
+    $('#section-2-carousel').carousel('cycle');
+});
