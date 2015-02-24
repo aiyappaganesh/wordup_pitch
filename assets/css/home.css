@@ -37,7 +37,7 @@
 .section-1-title {
     font-family: nevis;
     color:  #ffffff;
-    font-size: 3.75vw;
+    font-size: 48px;
     font-weight: 700;
     text-align: center;
     margin-top: 12%;
@@ -46,7 +46,7 @@
 .section-1-copy {
     font-family: 'Open Sans', sans-serif;
     color:  #ffffff;
-    font-size: 2.5vw;
+    font-size: 32px;
     font-weight: 400;
     text-align: center;
 }
@@ -54,7 +54,7 @@
 .section-1-black-copy {
     font-family: nevis;
     color:  #1c1c1c;
-    font-size: 3.75vw;
+    font-size: 48px;
     font-weight: 700;
     text-align: center;
     margin-top: 50px;
@@ -195,4 +195,18 @@
     text-align: center;
     height: 28px;
     padding-top: 4px !important;
+}
+
+@media (max-width: 767px) {
+    .section-1-title {
+        font-size: 40px;
+    }
+
+    .section-1-copy {
+        font-size: 24px;
+    }
+
+    .section-1-black-copy {
+        font-size: 40px;
+    }
 }
