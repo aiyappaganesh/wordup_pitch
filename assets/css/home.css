@@ -201,6 +201,18 @@
     width: 260px;
 }
 
+.carousel-control.right {
+    right: -60px;
+}
+
+.carousel-control.left {
+    left: -60px;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+}
+
 @media (max-width: 991px) {
 
     .section-1-title {
