@@ -63,7 +63,7 @@
 .section-title-black {
     font-family: nevis;
     color:  #1c1c1c;
-    font-size: 2.8vw;
+    font-size: 36px;
     font-weight: 400;
     text-align: center;
     margin-top: 3%;
@@ -72,7 +72,7 @@
 .section-title-white {
     font-family: nevis;
     color:  #ffffff;
-    font-size: 2.8vw;
+    font-size: 36px;
     font-weight: 400;
     text-align: center;
     margin-top: 3%;
@@ -99,7 +99,7 @@
 .section-2-carousel-copy {
     font-family: 'Open Sans', sans-serif;
     color:  #1c1c1c;
-    font-size: 2.34vw;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
     margin-top: 30%;
@@ -108,14 +108,14 @@
 .section-3-copy {
     font-family: 'Open Sans', sans-serif;
     color:  #1c1c1c;
-    font-size: 1.88vw;
+    font-size: 24px;
     font-weight: 600;
 }
 
 .section-4-copy {
     font-family: 'Open Sans', sans-serif;
     color:  #1c1c1c;
-    font-size: 1.88vw;
+    font-size: 24px;
     font-weight: 600;
     margin-top: 30%;
 }
@@ -136,7 +136,7 @@
 .section-5-left-copy {
     font-family: 'Open Sans', sans-serif;
     color:  #1c1c1c;
-    font-size: 1.88vw;
+    font-size: 24px;
     font-weight: 600;
     text-align: left;
     margin-top: 21px !important;
@@ -150,7 +150,7 @@
 .section-5-right-title {
     font-family: 'Open Sans', sans-serif;
     color:  #1c1c1c;
-    font-size: 1.88vw;
+    font-size: 24px;
     font-weight: 600;
     text-align: left;
 }
@@ -158,7 +158,7 @@
 .section-5-right-copy {
     font-family: 'Open Sans', sans-serif;
     color:  #1c1c1c;
-    font-size: 1.88vw;
+    font-size: 24px;
     font-weight: 400;
     text-align: left;
 }
@@ -166,7 +166,7 @@
 .section-6-title {
     font-family: 'Open Sans', sans-serif;
     color:  #1c1c1c;
-    font-size: 2.34vw;
+    font-size: 30px;
     font-weight: 600;
     text-align: left;
     margin-bottom: 0px !important;
@@ -176,7 +176,7 @@
 .section-6-copy {
     font-family: 'Open Sans', sans-serif;
     color:  #1c1c1c;
-    font-size: 1.41vw;
+    font-size: 18px;
     font-weight: 400;
     text-align: left;
 }
@@ -190,14 +190,19 @@
     background-color: #e9573f;
     font-family: 'Open Sans', sans-serif;
     color:  #ffffff;
-    font-size: 1.09vw;
+    font-size: 14px;
     font-weight: 400;
     text-align: center;
     height: 28px;
     padding-top: 4px !important;
 }
 
-@media (max-width: 767px) {
+.phone-container {
+    width: 260px;
+}
+
+@media (max-width: 991px) {
+
     .section-1-title {
         font-size: 40px;
     }
@@ -208,5 +213,73 @@
 
     .section-1-black-copy {
         font-size: 40px;
+    }
+
+    .section {
+        height: 650px !important;
+    }
+
+    .medium-short-section {
+        height: 600px !important;
+    }
+
+    .section-2-carousel-copy {
+        margin-top: 5%;
+        font-size: 22px;
+    }
+
+    .section-title-black {
+        font-size: 28px;
+    }
+
+    .section-title-white {
+        font-size: 28px;
+    }
+
+    .section-3-copy {
+        font-size: 16px;
+    }
+
+    .section-4-copy {
+        font-size: 16px;
+        margin-top: 5%;
+        text-align: center !important;
+    }
+
+    .section-5-left-copy {
+        font-size: 16px;
+        margin-top: 0px !important;
+    }
+
+    .section-5-right-title {
+        font-size: 16px;
+    }
+
+    .section-5-right-copy {
+        font-size: 16px;
+    }
+
+    .section-6-title {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .section-6-copy {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .section-6-graph-bar {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 767px) {
+    .long-section {
+        height: 900px !important;
+    }
+
+    .medium-long-section {
+        height: 750px !important;
     }
 }
