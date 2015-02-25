@@ -213,6 +213,11 @@
     background-image: none;
 }
 
+.glyphicon {
+    background-color: rgba(233,87,62,0.95);
+    border-radius: 50%;
+}
+
 @media (max-width: 991px) {
 
     .section-1-title {
