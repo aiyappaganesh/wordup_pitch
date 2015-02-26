@@ -55,6 +55,14 @@
     margin-top: 50px !important;
 }
 
+.top-margin-3-half-percent {
+    margin-top: 3.5% !important;
+}
+
 .auto-margin {
     margin: auto;
+}
+
+.uppermost {
+    z-index: 9999;
 }

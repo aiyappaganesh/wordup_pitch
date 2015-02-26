@@ -16,4 +16,14 @@ function setHeights() {
     $('.medium-long-section').height(medium_long_section_height);
     var long_section_height = Math.max($('.long-section').height(), height);
     $('.long-section').height(long_section_height);
+    centerAlign();
+}
+
+function centerAlign() {
+    $('.section').each(function(){
+        var content_overlay = $($(this).find('.content-overlay')[0]).height();
+        var section_content = $($(this).find('.section-content')[0]).height();
+        var section_content_margin = (content_overlay/2) - (section_content/2);
+        $($(this).find('.section-content')[0]).css('margin-top', section_content_margin);
+    });
 }

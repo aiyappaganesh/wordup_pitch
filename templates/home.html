@@ -11,8 +11,8 @@
     <div class="row">
         <div class="col-md-12 section normal-section" style="background:url('/assets/img/smiling_cell_phone.png')">
             <div class="orange-overlay"></div>
-            <div class="row copy-overlay">
-                <div class="col-md-12">
+            <div class="row content-overlay">
+                <div class="col-md-12 section-content">
                     <p class="section-1-title">Introducing WORDUP</p>
                     <p class="section-1-copy">We help people communicate better through<br>the lyrics and music they love</p>
                     <p class="section-1-black-copy">It’s time to..........<br> <span>LET THE MUSIC SPEAK!&#8482;</span></p>
@@ -22,131 +22,144 @@
     </div>
     <div class="row">
         <div class="col-xs-12 medium-short-section section">
-            <div>
-                <p class="section-title-black">PUTTING THE RIGHT WORDS<br>INTO YOUR MOUTH</p>
+            <div class="auto-margin">
+                <div class="col-md-12">
+                    <p class="section-title-black">PUTTING THE RIGHT WORDS INTO YOUR MOUTH</p>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-xs-2"></div>
-                <div id="section-2-carousel" class="col-xs-8 carousel slide full-height" data-interval="3000" data-pause="false">
-                    <div class="carousel-inner full-height">
-                        {% for slide in section2.carousel.slides %}
-                        <div class="item {% if forloop.first %}active{% endif %}">
-                            <div class="col-sm-6 relative white-phone">
-                                <div class="relative auto-margin phone-container">
-                                    <img src="{{phone_outline_white}}" class="absolute white-phone-outline">
-                                    <img src="{{slide.img}}" class="absolute white-phone-screen">
+            <div class=" content-overlay">
+                <div class="row">
+                    <div class="col-xs-2"></div>
+                    <div id="section-2-carousel" class="col-xs-8 carousel slide full-height section-content" data-interval="3000" data-pause="false">
+                        <div class="carousel-inner full-height">
+                            {% for slide in section2.carousel.slides %}
+                            <div class="item {% if forloop.first %}active{% endif %}">
+                                <div class="col-sm-5 relative white-phone">
+                                    <div class="relative auto-margin phone-container">
+                                        <img src="{{phone_outline_white}}" class="absolute white-phone-outline">
+                                        <img src="{{slide.img}}" class="absolute white-phone-screen">
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <p class="section-2-carousel-copy">{{slide.copy|safe|escape}}</p>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <p class="section-2-carousel-copy">{{slide.copy|safe|escape}}</p>
-                            </div>
+                            {% endfor %}
                         </div>
-                        {% endfor %}
+                        <a class="left carousel-control" href="#section-2-carousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="#section-2-carousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
                     </div>
-                    <a class="left carousel-control" href="#section-2-carousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#section-2-carousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
+                    <div class="col-xs-2"></div>
                 </div>
-                <div class="col-xs-2"></div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12 long-section section" style="background:url('/assets/img/smiling_couple.png')">
-            <div class="orange-overlay"></div>
-            <div class="content-overlay">
+        <div class="col-sm-12 long-section section" style="background:url('/assets/img/smiling_couple.png')">
+            <div class="orange-overlay">
                 <p class="section-title-white">USERS CAN MAKE<br>THEIR MESSAGES MEMORABLE</p>
-                <div class="row">
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-5">
-                        <div class="row">
-                            <p class="section-3-copy align-center">We all aspire to have our messages<br>be “liked”, “remembered”, and even<br>better...“Responded To”.</p>
+            </div>
+            <div class="content-overlay">
+                <div class="section-content">
+                    <div class="row section-3-content">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-5">
+                            <div class="row">
+                                <p class="section-3-copy align-center">We all aspire to have our messages<br>be “liked”, “remembered”, and even<br>better...“Responded To”.</p>
+                            </div>
+                            <div class="row social-msg-img">
+                                <img class="top-margin-15" src="/assets/img/social_message.png">
+                            </div>
+                            <div class="row">
+                                <p class="section-3-copy align-center top-margin-15">Yet most of our messages<br>lack emotional connection</p>
+                            </div>
                         </div>
-                        <div class="row">
-                            <img class="top-margin-15" src="/assets/img/social_message.png">
+                        <div class="col-sm-3 white-phone">
+                            <div class="relative auto-margin phone-container">
+                                <img src="{{phone_outline_white}}" class="absolute white-phone-outline">
+                                <img src="/assets/img/section_3_screen.png" class="absolute white-phone-screen">
+                            </div>
                         </div>
-                        <div class="row">
-                            <p class="section-3-copy align-center top-margin-15">Yet most of our messages<br>lack emotional connection</p>
-                        </div>
+                        <div class="col-sm-2"></div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="relative auto-margin phone-container">
-                            <img src="{{phone_outline_white}}" class="absolute white-phone-outline">
-                            <img src="/assets/img/section_3_screen.png" class="absolute white-phone-screen">
-                        </div>
-                    </div>
-                    <div class="col-sm-2"></div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-12 medium-short-section section" style="background:url('/assets/img/bud_light.png')">
-            <div class="white-overlay"></div>
-            <div class="content-overlay">
+            <div class="white-overlay">
                 <p class="section-title-black">BRANDS CAN PARTICIPATE IN CONSUMERS’ EMOTIONAL MOMENTS</p>
-                <div class="row">
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-4">
-                        <img src="/assets/img/section_4_screen.png">
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="row">
-                            <p class="section-4-copy align-left">Brands can significantly increase<br>their user engagement by<br>participating in moments that<br>matter to their consumers</p>
+            </div>
+            <div class="content-overlay">
+                <div class="section-content">
+                    <div class="row section-4-content">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-4 section-4-screen">
+                            <img src="/assets/img/section_4_screen.png">
                         </div>
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <p class="section-4-copy align-left">Brands can significantly increase<br>their user engagement by<br>participating in moments that<br>matter to their consumers</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-2"></div>
                     </div>
-                    <div class="col-sm-2"></div>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12 medium-long-section section">
-            <div class="orange-overlay"></div>
-            <div class="content-overlay">
-                <div class="row">
-                    <div class="col-xs-5 col-xs-offset-1">
-                        <p class="section-title-white align-left col-md-offset-2">TARGET MARKET</p>
-                    </div>
-                    <div class="col-xs-6">
-                        <p class="section-title-white align-left">GO TO MARKET BUSINESS MODEL</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-5 col-xs-offset-1">
-
-                        <div class="">
-                            {% for target in section5.targets %}
-                            <div class="row {% if not forloop.first %}top-margin-20{% endif %}">
-                                <div class="col-md-2"></div>
-                                <div class="col-md-2">
-                                    <div class="white-circle">
-                                        <img class="constrain-50" src="{{target.img}}">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="section-5-left-copy">{{target.copy}}</p>
-                                </div>
-                            </div>
-                            {% endfor %}
+        <div class="col-xs-12 medium-long-section section orange-background">
+            <div class="auto-margin">
+                <div class="col-md-12">
+                    <div class="row section-title-white-small">
+                        <div class="col-xs-5 col-xs-offset-1">
+                            <p class=" align-left col-md-offset-2">TARGET MARKET</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <p class=" align-left">GO TO MARKET BUSINESS MODEL</p>
                         </div>
                     </div>
-                    <div class="col-xs-6">
-
-                        <div class="">
-                            <div class="row">
-                                <p class="section-5-right-title">Primary Offerings</p>
-                                <p class="section-5-right-copy">1. Licensed API Platform</p>
-                                <p class="section-5-right-copy">2. Freemium Consumer App</p>
+                </div>
+            </div>
+            <div class="content-overlay">
+                <div class="section-content">
+                    <div class="row section-5-content">
+                        <div class="col-xs-5 col-xs-offset-1">
+                            <div class="">
+                                {% for target in section5.targets %}
+                                <div class="row {% if not forloop.first %}top-margin-20{% endif %}">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-2">
+                                        <div class="white-circle">
+                                            <img class="constrain-50" src="{{target.img}}">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="section-5-left-copy">{{target.copy}}</p>
+                                    </div>
+                                </div>
+                                {% endfor %}
                             </div>
-                            <div class="row top-margin-50">
-                                <p class="section-5-right-title">Distribution Channels</p>
-                                <p class="section-5-right-copy">1. App platforms with established social reach</p>
-                                <p class="section-5-right-copy">2. Consumer brands</p>
-                                <p class="section-5-right-copy">3. Consumer direct via app store</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="">
+                                <div class="row">
+                                    <p class="section-5-right-title">Primary Offerings</p>
+                                    <p class="section-5-right-copy">1. Licensed API Platform</p>
+                                    <p class="section-5-right-copy">2. Freemium Consumer App</p>
+                                </div>
+                                <div class="row top-margin-50">
+                                    <p class="section-5-right-title">Distribution Channels</p>
+                                    <p class="section-5-right-copy">1. App platforms with established social reach</p>
+                                    <p class="section-5-right-copy">2. Consumer brands</p>
+                                    <p class="section-5-right-copy">3. Consumer direct via app store</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -157,46 +170,50 @@
     <div class="row">
         <div class="col-sm-12 section normal-section">
             <p class="section-title-black">TEAM AND CURRENT STATUS</p>
-            <div class="row">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
-                    <p class="section-6-title">CEO - Bart Glass</p>
-                    <p class="section-6-copy">Managing Partner, Accenture Global<br>EVP & Board Director, Gift Card Impressions</p>
-                    <p class="section-6-title">COO - David Rossette</p>
-                    <p class="section-6-copy">Founder, Chairman, LeaseNet Inc. ($100M exit)<br>Founding member, Ohio Tech Angel Fund</p>
-                    <p class="section-6-title">CTO - Chad Kouse</p>
-                    <p class="section-6-copy">Founder and CTO, TuneWiki (acquired)<br>13+ years experience in leading software teams</p>
+            <div class="row content-overlay">
+                <div class="col-md-12 section-content">
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6">
+                            <p class="section-6-title">CEO - Bart Glass</p>
+                            <p class="section-6-copy">Managing Partner, Accenture Global<br>EVP & Board Director, Gift Card Impressions</p>
+                            <p class="section-6-title">COO - David Rossette</p>
+                            <p class="section-6-copy">Founder, Chairman, LeaseNet Inc. ($100M exit)<br>Founding member, Ohio Tech Angel Fund</p>
+                            <p class="section-6-title">CTO - Chad Kouse</p>
+                            <p class="section-6-copy">Founder and CTO, TuneWiki (acquired)<br>13+ years experience in leading software teams</p>
+                        </div>
+                        <div class="col-sm-3"></div>
+                    </div>
+                    <div class="row top-margin-20">
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-6 section-6-graph-scale">
+                            <span class="col-xs-6 align-center">Q1</span>
+                            <span class="col-xs-6 align-center">Q2</span>
+                        </div>
+                        <div class="col-xs-3"></div>
+                    </div>
+                    <div class="row top-margin-10">
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-6">
+                            <span class="col-xs-10 align-center section-6-graph-bar">Raising $2M Launch Investment</span>
+                        </div>
+                        <div class="col-xs-3"></div>
+                    </div>
+                    <div class="row top-margin-10">
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-6">
+                            <span class="col-xs-9 align-center section-6-graph-bar">Positioning strategic launch partners</span>
+                        </div>
+                        <div class="col-xs-3"></div>
+                    </div>
+                    <div class="row top-margin-10">
+                        <div class="col-xs-3"></div>
+                        <div class="col-xs-6">
+                            <span class="col-xs-12 align-center section-6-graph-bar">Product Launch</span>
+                        </div>
+                        <div class="col-xs-3"></div>
+                    </div>
                 </div>
-                <div class="col-sm-4"></div>
-            </div>
-            <div class="row top-margin-20">
-                <div class="col-xs-4"></div>
-                <div class="col-xs-4 section-6-graph-scale">
-                    <span class="col-xs-6 align-center">Q1</span>
-                    <span class="col-xs-6 align-center">Q2</span>
-                </div>
-                <div class="col-xs-4"></div>
-            </div>
-            <div class="row top-margin-10">
-                <div class="col-xs-4"></div>
-                <div class="col-xs-4">
-                    <span class="col-xs-10 align-center section-6-graph-bar">Raising $2M Launch Investment</span>
-                </div>
-                <div class="col-xs-4"></div>
-            </div>
-            <div class="row top-margin-10">
-                <div class="col-xs-4"></div>
-                <div class="col-xs-4">
-                    <span class="col-xs-9 align-center section-6-graph-bar">Positioning strategic launch partners</span>
-                </div>
-                <div class="col-xs-4"></div>
-            </div>
-            <div class="row top-margin-10">
-                <div class="col-xs-4"></div>
-                <div class="col-xs-4">
-                    <span class="col-xs-12 align-center section-6-graph-bar">Product Launch</span>
-                </div>
-                <div class="col-xs-4"></div>
             </div>
         </div>
     </div>

@@ -13,6 +13,10 @@
     width: 100%;
 }
 
+.orange-background {
+    background-color: rgba(233,87,62,0.70);
+}
+
 .white-overlay {
     background-color: rgba(255,255,255,0.70);
     position: absolute;
@@ -20,18 +24,20 @@
     width: 100%;
 }
 
-.copy-overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 9999;
-}
-
 .content-overlay {
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 9999;
+    top: 0;
+}
+
+.social-msg-img {
+    min-height: 181px;
+}
+
+.section-4-screen {
+    min-height: 338px;
 }
 
 .section-1-title {
@@ -40,7 +46,6 @@
     font-size: 48px;
     font-weight: 700;
     text-align: center;
-    margin-top: 12%;
 }
 
 .section-1-copy {
@@ -66,7 +71,7 @@
     font-size: 36px;
     font-weight: 400;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 3.5%;
 }
 
 .section-title-white {
@@ -75,7 +80,16 @@
     font-size: 36px;
     font-weight: 400;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 3.5%;
+}
+
+.section-title-white-small {
+    font-family: nevis;
+    color:  #ffffff;
+    font-size: 33px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 4% !important;
 }
 
 .white-phone-outline {
@@ -102,7 +116,7 @@
     font-size: 30px;
     font-weight: 600;
     text-align: center;
-    margin-top: 30%;
+    margin-top: 150px;
 }
 
 .section-3-copy {
@@ -112,12 +126,20 @@
     font-weight: 600;
 }
 
+.section-3-content {
+    padding-top: 90px !important;
+}
+
+.section-4-content {
+    padding-top: 90px !important;
+}
+
 .section-4-copy {
     font-family: 'Open Sans', sans-serif;
     color:  #1c1c1c;
     font-size: 24px;
     font-weight: 600;
-    margin-top: 30%;
+    margin-top: 105px;
 }
 
 .white-circle {
@@ -136,7 +158,7 @@
 .section-5-left-copy {
     font-family: 'Open Sans', sans-serif;
     color:  #1c1c1c;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     text-align: left;
     margin-top: 21px !important;
@@ -161,6 +183,10 @@
     font-size: 24px;
     font-weight: 400;
     text-align: left;
+}
+
+.section-5-content {
+    padding-top: 90px !important;
 }
 
 .section-6-title {
@@ -249,13 +275,16 @@
         font-size: 28px;
     }
 
+    .section-title-white-small {
+        font-size: 25px;
+    }
+
     .section-3-copy {
         font-size: 16px;
     }
 
     .section-4-copy {
         font-size: 16px;
-        margin-top: 5%;
         text-align: center !important;
     }
 
@@ -287,17 +316,26 @@
     }
 
     .normal-section {
-        height: 400px;
+        height: 450px;
     }
 
     .medium-short-section {
         height: 600px;
     }
+
+    .medium-long-section {
+        height: 700px;
+    }
+
 }
 
 @media (max-width: 768px) {
     .glyphicon {
         padding-top: 14px !important;
+    }
+
+    .long-section {
+        height: 850px;
     }
 }
 
@@ -320,19 +358,32 @@
     }
 
     .section-title-black {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .section-title-white {
-        font-size: 24px;
+        font-size: 22px;
+    }
+
+    .section-title-white-small {
+        font-size: 19px;
     }
 
     .section-3-copy {
         font-size: 16px;
     }
 
+    .section-3-content {
+        padding-top: 60px !important;
+    }
+
+    .section-4-content {
+        padding-top: 60px !important;
+    }
+
     .section-4-copy {
         font-size: 16px;
+        margin-top: 5%;
     }
 
     .section-5-left-copy {
@@ -345,6 +396,10 @@
 
     .section-5-right-copy {
         font-size: 16px;
+    }
+
+    .section-5-content {
+        padding-top: 40px !important;
     }
 
     .section-6-title {
@@ -394,8 +449,20 @@
         font-size: 20px;
     }
 
+    .section-title-white-small {
+        font-size: 17px;
+    }
+
     .section-3-copy {
         font-size: 12px;
+    }
+
+    .section-3-content {
+        padding-top: 20px !important;
+    }
+
+    .section-4-content {
+        padding-top: 20px !important;
     }
 
     .section-4-copy {
@@ -403,7 +470,7 @@
     }
 
     .section-5-left-copy {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .section-5-right-title {
@@ -427,7 +494,7 @@
     }
 
     .long-section {
-        height: 850px;
+        height: 950px;
     }
 
     .medium-long-section {
