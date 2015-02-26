@@ -4,9 +4,9 @@ class HomePage(WebRequestHandler):
     def get(self):
         path = 'home.html'
         template_values = {}
+        template_values['phone_outline_white'] = '/assets/img/iphone_skin.png'
         template_values['section2'] = {}
         template_values['section2']['carousel'] = {}
-        template_values['section2']['carousel']['phone_outline_img'] = '/assets/img/phone_white.png'
         template_values['section2']['carousel']['slides'] = []
         template_values['section2']['carousel']['slides'].append({'img':'/assets/img/screen_1.png','copy':'Share your audio music message'})
         template_values['section2']['carousel']['slides'].append({'img':'/assets/img/screen_2.png','copy':'Simply type what <br> you want to see'})

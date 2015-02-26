@@ -57,7 +57,7 @@
     font-size: 48px;
     font-weight: 700;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 5%;
 }
 
 .section-title-black {
@@ -85,7 +85,7 @@
 
 .white-phone-screen {
     top: 57px;
-    left: 43px;
+    left: 16px;
 }
 
 .white-phone {
@@ -170,7 +170,7 @@
     font-weight: 600;
     text-align: left;
     margin-bottom: 0px !important;
-    margin-top: 10px !important;
+    margin-top: 20px !important;
 }
 
 .section-6-copy {
@@ -198,7 +198,7 @@
 }
 
 .phone-container {
-    width: 260px;
+    width: 196px;
 }
 
 .carousel-control.right {
@@ -216,6 +216,10 @@
 .glyphicon {
     background-color: rgba(233,87,62,0.95);
     border-radius: 50%;
+    width: 50px !important;
+    height: 50px !important;
+    padding-top: 9px !important;
+    top: 46% !important;
 }
 
 @media (max-width: 991px) {
@@ -230,14 +234,6 @@
 
     .section-1-black-copy {
         font-size: 40px;
-    }
-
-    .section {
-        height: 650px !important;
-    }
-
-    .medium-short-section {
-        height: 600px !important;
     }
 
     .section-2-carousel-copy {
@@ -289,14 +285,152 @@
     .section-6-graph-bar {
         font-size: 8px;
     }
+
+    .normal-section {
+        height: 400px;
+    }
+
+    .medium-short-section {
+        height: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .glyphicon {
+        padding-top: 14px !important;
+    }
 }
 
 @media (max-width: 767px) {
+
+    .section-1-title {
+        font-size: 36px;
+    }
+
+    .section-1-copy {
+        font-size: 20px;
+    }
+
+    .section-1-black-copy {
+        font-size: 32px;
+    }
+
+    .section-2-carousel-copy {
+        font-size: 18px;
+    }
+
+    .section-title-black {
+        font-size: 24px;
+    }
+
+    .section-title-white {
+        font-size: 24px;
+    }
+
+    .section-3-copy {
+        font-size: 16px;
+    }
+
+    .section-4-copy {
+        font-size: 16px;
+    }
+
+    .section-5-left-copy {
+        font-size: 16px;
+    }
+
+    .section-5-right-title {
+        font-size: 16px;
+    }
+
+    .section-5-right-copy {
+        font-size: 16px;
+    }
+
+    .section-6-title {
+        font-size: 18px;
+    }
+
+    .section-6-copy {
+        font-size: 16px;
+    }
+
+    .section-6-graph-bar {
+        font-size: 10px;
+    }
+
     .long-section {
-        height: 900px !important;
+        height: 850px;
     }
 
     .medium-long-section {
-        height: 750px !important;
+        height: 700px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section-1-title {
+        font-size: 32px;
+    }
+
+    .section-1-copy {
+        font-size: 16px;
+    }
+
+    .section-1-black-copy {
+        font-size: 32px;
+    }
+
+    .section-2-carousel-copy {
+        font-size: 14px;
+    }
+
+    .section-title-black {
+        font-size: 20px;
+    }
+
+    .section-title-white {
+        font-size: 20px;
+    }
+
+    .section-3-copy {
+        font-size: 12px;
+    }
+
+    .section-4-copy {
+        font-size: 12px;
+    }
+
+    .section-5-left-copy {
+        font-size: 12px;
+    }
+
+    .section-5-right-title {
+        font-size: 12px;
+    }
+
+    .section-5-right-copy {
+        font-size: 12px;
+    }
+
+    .section-6-title {
+        font-size: 14px;
+    }
+
+    .section-6-copy {
+        font-size: 12px;
+    }
+
+    .section-6-graph-bar {
+        font-size: 9px;
+    }
+
+    .long-section {
+        height: 850px;
+    }
+
+    .medium-long-section {
+        height: 700px;
     }
 }

@@ -1,8 +1,19 @@
-$(document).ready(function(){
-    var height = $(window).height() * 0.95;
-    $('.section').height(height);
+$(window).on("orientationchange", function(event) {
+    window.location.reload(false);
 });
 
 $(document).ready(function(){
-    $('#section-2-carousel').carousel('cycle');
+    setHeights();
 });
+
+function setHeights() {
+    var height = $(window).height() * 0.99;
+    var normal_section_height = Math.max($('.normal-section').height(), height);
+    $('.normal-section').height(normal_section_height);
+    var medium_short_section_height = Math.max($('.medium-short-section').height(), height);
+    $('.medium-short-section').height(medium_short_section_height);
+    var medium_long_section_height = Math.max($('.medium-long-section').height(), height);
+    $('.medium-long-section').height(medium_long_section_height);
+    var long_section_height = Math.max($('.long-section').height(), height);
+    $('.long-section').height(long_section_height);
+}

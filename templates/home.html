@@ -2,24 +2,26 @@
 
 {% block Styles %}
 <link href="/assets/css/home.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/lib/jquery.mobile.min.css">
+<script src="/assets/js/lib/jquery.mobile.min.js"></script>
 {% endblock %}
 
 {% block Content %}
 <div class="content">
     <div class="row">
-        <div class="col-md-12 medium-short-section section" style="background:url('/assets/img/smiling_cell_phone.png')">
+        <div class="col-md-12 section normal-section" style="background:url('/assets/img/smiling_cell_phone.png')">
             <div class="orange-overlay"></div>
             <div class="row copy-overlay">
                 <div class="col-md-12">
-                    <p class="section-1-title">Introducing WORD UP</p>
+                    <p class="section-1-title">Introducing WORDUP</p>
                     <p class="section-1-copy">We help people communicate better through<br>the lyrics and music they love</p>
-                    <p class="section-1-black-copy">It’s time to..........<br> LET THE MUSIC SPEAK!</p>
+                    <p class="section-1-black-copy">It’s time to..........<br> <span>LET THE MUSIC SPEAK!&#8482;</span></p>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 medium-long-section section">
+        <div class="col-xs-12 medium-short-section section">
             <div>
                 <p class="section-title-black">PUTTING THE RIGHT WORDS<br>INTO YOUR MOUTH</p>
             </div>
@@ -31,7 +33,7 @@
                         <div class="item {% if forloop.first %}active{% endif %}">
                             <div class="col-sm-6 relative white-phone">
                                 <div class="relative auto-margin phone-container">
-                                    <img src="{{section2.carousel.phone_outline_img}}" class="absolute white-phone-outline">
+                                    <img src="{{phone_outline_white}}" class="absolute white-phone-outline">
                                     <img src="{{slide.img}}" class="absolute white-phone-screen">
                                 </div>
                             </div>
@@ -64,15 +66,15 @@
                             <p class="section-3-copy align-center">We all aspire to have our messages<br>be “liked”, “remembered”, and even<br>better...“Responded To”.</p>
                         </div>
                         <div class="row">
-                            <img src="/assets/img/social_message.png">
+                            <img class="top-margin-15" src="/assets/img/social_message.png">
                         </div>
                         <div class="row">
-                            <p class="section-3-copy align-center">Yet most of our messages<br>lack emotional connection</p>
+                            <p class="section-3-copy align-center top-margin-15">Yet most of our messages<br>lack emotional connection</p>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="relative auto-margin phone-container">
-                            <img src="/assets/img/phone_white.png" class="absolute white-phone-outline">
+                            <img src="{{phone_outline_white}}" class="absolute white-phone-outline">
                             <img src="/assets/img/section_3_screen.png" class="absolute white-phone-screen">
                         </div>
                     </div>
@@ -82,10 +84,10 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 section" style="background:url('/assets/img/bud_light.png')">
+        <div class="col-sm-12 medium-short-section section" style="background:url('/assets/img/bud_light.png')">
             <div class="white-overlay"></div>
             <div class="content-overlay">
-                <p class="section-title-black">BRANDS CAN PARTICIPATE IN<br>CONSUMERS’ EMOTIONAL MOMENTS</p>
+                <p class="section-title-black">BRANDS CAN PARTICIPATE IN CONSUMERS’ EMOTIONAL MOMENTS</p>
                 <div class="row">
                     <div class="col-sm-2"></div>
                     <div class="col-sm-4">
@@ -108,6 +110,14 @@
                 <div class="row">
                     <div class="col-xs-5 col-xs-offset-1">
                         <p class="section-title-white align-left col-md-offset-2">TARGET MARKET</p>
+                    </div>
+                    <div class="col-xs-6">
+                        <p class="section-title-white align-left">GO TO MARKET BUSINESS MODEL</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5 col-xs-offset-1">
+
                         <div class="">
                             {% for target in section5.targets %}
                             <div class="row {% if not forloop.first %}top-margin-20{% endif %}">
@@ -124,10 +134,10 @@
                             {% endfor %}
                         </div>
                     </div>
-                    <div class="col-xs-5">
-                        <p class="section-title-white align-left">GO TO MARKET<br>BUSINESS MODEL</p>
+                    <div class="col-xs-6">
+
                         <div class="">
-                            <div class="row top-margin-50">
+                            <div class="row">
                                 <p class="section-5-right-title">Primary Offerings</p>
                                 <p class="section-5-right-copy">1. Licensed API Platform</p>
                                 <p class="section-5-right-copy">2. Freemium Consumer App</p>
@@ -145,7 +155,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12 medium-short-section section">
+        <div class="col-sm-12 section normal-section">
             <p class="section-title-black">TEAM AND CURRENT STATUS</p>
             <div class="row">
                 <div class="col-sm-4"></div>
