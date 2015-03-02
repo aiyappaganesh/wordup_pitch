@@ -37,7 +37,12 @@
 }
 
 .section-4-screen {
-    min-height: 338px;
+    min-height: 526px;
+}
+
+.section-4-embed {
+    height: 526px;
+    width: 400px;
 }
 
 .section-1-title {
@@ -100,10 +105,16 @@
 .white-phone-screen {
     top: 57px;
     left: 16px;
+    height: 292px;
+    width: 165px;
 }
 
 .white-phone {
     height: 415px;
+}
+
+.white-phone-big {
+    height: 450px;
 }
 
 .carousel-inner>.item {
@@ -128,6 +139,12 @@
 
 .section-3-content {
     padding-top: 90px !important;
+}
+
+.section-3-phone-screen {
+    top: 63px;
+    left: 17px;
+    height: 325px;
 }
 
 .section-4-content {
@@ -207,6 +224,10 @@
     text-align: left;
 }
 
+.section-6-copy-right {
+    margin-top: 35px !important;
+}
+
 .section-6-graph-scale {
     border-left: 1px solid #e9573f;
     border-right: 1px solid #e9573f;
@@ -225,6 +246,11 @@
 
 .phone-container {
     width: 196px;
+}
+
+.phone-container-big {
+    width: 218px;
+    height: 100%;
 }
 
 .carousel-control.right {
@@ -246,6 +272,10 @@
     height: 50px !important;
     padding-top: 9px !important;
     top: 46% !important;
+}
+
+.medium-section {
+    height: 850px;
 }
 
 @media (max-width: 991px) {
@@ -337,6 +367,10 @@
     .long-section {
         height: 850px;
     }
+
+    .section-4-copy {
+        margin-top: 5%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -384,6 +418,10 @@
     .section-4-copy {
         font-size: 16px;
         margin-top: 5%;
+    }
+
+    .section-4-embed {
+        width: 320px;
     }
 
     .section-5-left-copy {
